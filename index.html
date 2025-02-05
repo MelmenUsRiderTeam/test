@@ -9,21 +9,95 @@
     <link rel="icon" type="image/x-icon" href="images/tools.svg">
 
     <style>
-        .custom-background-image {
+        .work-with-us-text {
+            width: 300px;
+            text-align: left;
+            margin-top: 50px;
+        }
+
+        .work-with-us-text > p {
+            margin-top: 40px;
+            text-indent: 0px;
+        }
+
+        .step-box {
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            background-color: #f8f9fa;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .step-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #007bff;
+            float: left;
+            margin-right: 10px;
+        }
+        .step-content {
+            overflow: hidden;
+        }
+        .step-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .step-content > p {
+           font-size: 15px;
+        }
+
+        .hero-image {
             background-image: url('images/new_banner.jpg');
-            background-size: cover;
+            height: 100vh;
             background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .card {
+            width: 18rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-img-top {
+            border-bottom: 2px solid #007bff;
+        }
+
+        .card-title {
+            color: #000000;
+        }
+
+        .card-text {
+            color: #555;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #495057;
         }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
-        <a class="navbar-brand" href="#"><img src="images/globe-americas.svg" class="img-thumbnail" alt="..."> Аутсорсинг Компания</a>
-        
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">        
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-
+    
         <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item active font-weight-bold">
@@ -42,108 +116,163 @@
         </div>
     </nav>
 
-    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center custom-background-image">
-        <div class="col-md-5 p-lg-2 mx-auto my-5">
-          <h1 class="display-4 font-weight-bold text-white">Аутсорсинг</h1>
-          <p class="lead font-weight-normal text-white">Наша компания предоставляет услуги аутсорсинга по всей России</p>
-          <a class="btn btn-secondary btn-warning" href="https://t.me/+79283474431">+7 (928) 347 44 31</a>
+    <div class="hero-image">
+        <div class="content">
+            <h1 class="display-4 font-weight-bold text-white">Аутсорсинг</h1>
+            <p class="lead font-weight-normal text-white">Аутсорсинг линейного персонала для вашего бизнеса</p>
+            <a class="btn btn-secondary btn-warning" href="https://t.me/+79283474431">+7 (928) 347 44 31</a>
         </div>
     </div>
 
     <section id="about" class="py-5">
         <div class="container">
-            <h1 class="text-center font-weight-bold">О нас</h2>
-            <p class="text-center"></p>
+            <h4 class="text-center font-weight-bold">О нас</h4>
+
+            <p>Работаем по всей территории России, закрывая потребности клиентов в линейных исполнителях: грузчиках, разнорабочих, фасовщиках, упаковщиках, кассирах, промоутерах и т.д. В нашей базе более 600 человек, готовых выйти на ваш объект. Мы контролируем их на каждом этапе: от первого выхода до сдачи работ.</p>
+        
+            <p>Поиск, подбор и оформление – наша задача, вам достаточно просто сформировать заявку на необходимое количество людей. Приоритетом нашей компании является положительная репутация, опыт и собственный штаб сотрудников. Служба контроля на связи с клиентом 24/7.</p>
+            
+            <p>Все эти требования мы выполняем на 100% за счет правильно выстроенной работы служб нашей компании, постоянного мониторинга ситуации на объектах и наличия собственной службы подбора персонала. Мы разработали новый подход работы для того, чтобы Вы — наши клиенты, всегда оставались в зоне комфорта и сняли с себя «головную боль», доверив часть работ нам.</p>
         </div>
     </section>
-
-    <div class="card-columns">
-
-        <div class="row">
-            <div class="col-sm-12">
-              <div class="card">
-                <div class="card-body">
-                    <img src="images/shop.svg" class="img-thumbnail" alt="...">
-                    <h5 class="card-title font-weight-bold">Более 4 лет на рынке</h5>
-                    <p class="card-text">Наша организация предоставляет услуги аутсорсинга более 4 лет, и за это время мы успели зарекомендовать себя как надежный партнер для множества компаний. Мы стремимся к тому, чтобы наши клиенты могли сосредоточиться на своих основных бизнес-задачах, доверив нам выполнение рутинных и специализированных процессов. Благодаря индивидуальному подходу и вниманию к потребностям каждого клиента, мы добиваемся высоких результатов и помогаем нашим партнерам достигать их целей.</p>
-                </div>
-              </div>
-            </div>
-    
-            <div class="col-sm-12">
-                <div class="card">
-                  <div class="card-body">
-                      <img src="images/people-fill.svg" class="img-thumbnail" alt="...">
-                      <h5 class="card-title font-weight-bold">Надежный Состав</h5>
-                      <p class="card-text">В нашем распоряжении около 300 рабочих рук, которые готовы выехать в любой момент. Мы тщательно следим и отбираем людей, и не допускаем халтуры с их стороны. В любой момент в случае форс-мажора одни рабочие руки могут быть заменены другими.</p>
-                  </div>
-                </div>
-              </div>
-        </div>
-    
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="card">
-                  <div class="card-body">
-                      <img src="images/globe-americas.svg" class="img-thumbnail" alt="...">
-                      <h5 class="card-title font-weight-bold">Широкие руки</h5>
-                      <p class="card-text">Наша компания по аутсорсингу предоставляет рабочие руки по всей России, что позволяет нам охватывать широкий рынок и эффективно удовлетворять потребности наших клиентов в различных регионах страны.</p>
-                  </div>
-                </div>
-            </div>
-            <div class="col-sm-12">
-                <div class="card">
-                  <div class="card-body">
-                      <img src="images/lightning-fill.svg" class="img-thumbnail" alt="...">
-                      <h5 class="card-title font-weight-bold">Быстрое выполнение поставленых целей</h5>
-                      <p class="card-text">Быстрое выполнение поставленных целей является одним из ключевых факторов успеха нашей компании. Мы понимаем, что в современном бизнесе время играет решающую роль, и поэтому стремимся к максимально эффективному и оперативному решению задач. Наша команда состоит из опытных специалистов, которые обладают необходимыми навыками и знаниями для быстрого реагирования на изменения и вызовы, возникающие в процессе работы.</p>
-                  </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <section id="services" class="py-5 bg-light">
         <div class="container">
-            <h1 class="text-center font-weight-bold p-4">Наши услуги</h2>
+            <h4 class="text-center font-weight-bold p-4">Наши услуги</h4>
+
             <div class="card-deck">
-                <div class="card">
-                    <img class="card-img-top" src="images/small_banner_service.png" alt="Card image cap">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="images/small_banner_service.png">
                     <div class="card-body">
-                    <h5 class="card-title font-weight-bold">Предоставим Рабочую Силу</h5>
-                    <p class="card-text">Мы готовы предоставить рабочие руки в нужный и точный срок в любую точку России</p>
+                      <h5 class="card-title font-weight-bold">Аудит, подбор, СБ</h5>
+                      <p class="card-text">Проводим тщательный отбор кандидатов, соответствующих требованиям вашей компании.</p>
                     </div>
                 </div>
 
-                <div class="card">
-                    <img class="card-img-top" src="images/small_banner3_service.png" alt="Card image cap">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="images/small_banner3_service.png">
                     <div class="card-body">
-                    <h5 class="card-title font-weight-bold">Оперативность Замены</h5>
-                    <p class="card-text">Все наши сотрудники тщательно отобраны, и мы ручаемся за их качество работы. В случае форс-мажора мы готовы заменить сотрудника в любой момент</p>
+                      <h5 class="card-title font-weight-bold">Контроль работы</h5>
+                      <p class="card-text">Выделяем ответственного менеджера за контроль работы нашего персонала, ведение табеля учёта рабочего времени, контроль за исполнением локально-нормативных актов и соблюдение дисциплины.</p>
                     </div>
                 </div>
 
-                <div class="card">
-                    <img class="card-img-top" src="images/small_banner2_service.png" alt="Card image cap">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="images/small_banner2_service.png">
                     <div class="card-body">
-                    <h5 class="card-title font-weight-bold">Гибкость Расписания</h5>
-                    <p class="card-text">Мы предоставляем персонал только в случае наличия работы, поэтому вы не оплачиваете время простоя и перерывы</p>
+                      <h5 class="card-title font-weight-bold">Лизинг персонала</h5>
+                      <p class="card-text">Предоставление временных сотрудников для обслуживания рабочих процессов в сферах складской логистики, торговли, производства, общественного питания.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="text-center py-4">
+    <section id="services" class="py-5">
+        <div class="container">
+            <h4 class="text-center font-weight-bold p-4">
+                <span style="color: rgb(0, 159, 58);">Прозрачность</span> работы с нами
+            </h4>
+            
+            <div class="work-with-us-text">
+                <p><img src="images/bg.png" width="25px" height="25px"></img> Каждый сотрудник трудоустроен согласно <strong> законодательству</strong> РФ</p>
+                <p><img src="images/bg.png" width="25px" height="25px"></img> Каждый сотрудник <strong>имеет</strong> все необходимые документы, подтверждающие его квалификацию</p>
+                <p><img src="images/bg.png" width="25px" height="25px"></img> Мы работаем <strong>без</strong> применения схем оптимизации налогооблажения</p>
+                <p><img src="images/bg.png" width="25px" height="25px"></img> <strong>Готовы</strong> продемонстрировать для вас открытую калькуляцию</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <h4 class="text-center font-weight-bold p-4">
+                <span style="color: rgb(14, 136, 218);">Порядок</span> работы с нами
+            </h4>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="step-box">
+                        <div class="step-content">
+                            <span class="step-number">1</span>
+                            <div class="step-title">Заявка и расчет</div>
+                            <p>Оставляете заявку по телефону +79283474431 / +79964179190 обговариваем цену и сроки.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="step-box">
+                        <div class="step-content">
+                            <span class="step-number">2</span>
+                            <div class="step-title">Подбор персонала</div>
+                            <p>Обеспечиваем персонал спецодеждой и необходимыми СИЗ, а также проводим инструктажи и стажировки.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="step-box">
+                        <div class="step-content">
+                            <span class="step-number">3</span>
+                            <div class="step-title">Подготовка персонала</div>
+                            <p>Обеспечиваем проезд и проживание, а также доставку персонала на смену на завод и со смены.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="step-box">
+                        <div class="step-content">
+                            <span class="step-number">4</span>
+                            <div class="step-title">Организация проезда и проживания</div>
+                            <p>Наш персональный менеджер знакомит персонал с предприятием, проводит первичную адаптацию на рабочем месте.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="step-box">
+                        <div class="step-content">
+                            <span class="step-number">5</span>
+                            <div class="step-title">Вывод персонала</div>
+                            <p>Управляем сотрудниками и контролируем их работу.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="step-box">
+                        <div class="step-content">
+                            <span class="step-number">6</span>
+                            <div class="step-title">Контроль работ персонала</div>
+                            <p>Поддерживаем необходимое количество рабочего персонала на всем протяжении работ.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="step-box">
+                        <div class="step-content">
+                            <span class="step-number">7</span>
+                            <div class="step-title">Многократная бесплатная замена</div>
+                            <p>Вы производите оплату по факту оказанных услуг. Освобождаем вас от рисков.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center py-4" id="contact">
         <div class="container mt-5">
             <div class="row">
                 <div class="col-md-6 text-center">
                     <p><strong>Email:</strong> frolovarakelyan@gmail.com</p>
-                    <p><strong>Телефон:</strong> +7 (928) 347 44 31</p>
+                    <p><strong>Телефон:</strong></p>
+                    <p>+7 (928) 347 44 31</p>
+                    <p>+7 (996) 417 91 90</p>
                 </div>
             </div>
         </div>
-        <p>&copy; 2025 ИП ИРИНА ВАЛЕРЬЕВНА</p>
+        <p>&copy; 2025 Индивидуальный предприниматель Аракелян Ирина Валерьевна</p>
     </footer>
 
 </body>
